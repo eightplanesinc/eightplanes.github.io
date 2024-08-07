@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Keania+One&family=Merriweather&family=Montserrat&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="About_Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="circle_2"></div>
+    <div class="nav">
+      <div class="eplogo">
+        <img src="Group 37271.png" alt="" class="logo" />
+      </div>
+      <div class="list">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="#">About us</a></p>
+        <p><a href="#contactpage">Contact us</a></p>
+        <p class="odd"><a href="#projectsections1">Products</a></p>
+      </div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="cover-drop">
+      <div class="dropdown_menu open">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="">Contact us</a></li>
+          <li><a href="">Products</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const DropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function(){
+          DropDownMenu.classList.toggle('open')
+          const isOpen = DropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+      }
+  </script>
+    <div class="main">
+      <h1 class="first_h">About Our Company</h1>
+      <div class="about_p">
+        <p>
+        We are an innovative company specializing in the development of advanced
+        robotics and educational courses. They design and manufacture
+        cutting-edge robotic systems that cater to a wide range of industries,
+        from manufacturing to healthcare.
+        </p>
+      </div>
+      <div class="imgs">
+        <img src="Photo.jpg" class="img_1" alt="" />
+        <img src="Photo_2.jpg" class="img_1" alt="" />
+      </div>
+      <div class="bottom_content">
+        <h2>What we do?</h2>
+        <div class="child_bottom_cont">
+          <p>
+            At Eightplanes, we specialize in pioneering advancements in robotics
+            and providing top-tier educational courses. We design and
+            manufacture cutting-edge robotic systems for various industries,
+            enhancing efficiency and innovation. Additionally, we offer
+            comprehensive courses for all skill levels, equipping individuals
+            with practical skills and theoretical knowledge in robotics. By
+            merging technological innovation with educational excellence, we
+            shape the future of robotics and empower the next generation of
+            industry experts.
+          </p>
+        </div>
+      </div>
+      <div class="achieve">
+        <div>
+          <h1>1000<span style="color: #00cd82">+</span></h1>
+          <p>Students Trained</p>
+        </div>
+        <div>
+          <h1>50<span style="color: #00cd82">+</span></h1>
+          <p>Batches Completed</p>
+        </div>
+        <div>
+          <h1>10<span style="color: #00cd82">+</span></h1>
+          <p>Projects Completed</p>
+        </div>
+        <div>
+          <h1>1</h1>
+          <p>Patent Applied</p>
+        </div>
+      </div>
+      <div class="our_mission">
+        <div class="mis_content">
+          <h1>Our Mission</h1>
+          <p>
+            At Eightplanes, our mission is to drive technological innovation and
+            empower individuals through education. We are committed to
+            developing advanced robotic systems that revolutionize industries
+            and improve efficiency.
+          </p>
+
+          <p>
+            Simultaneously, we strive to provide comprehensive, accessible
+            educational courses that equip people with the skills and knowledge
+            needed to excel in the dynamic field of robotics. By combining
+            cutting-edge technology with exceptional training, we aim to shape a
+            future where robotics enhances everyday life and fosters a community
+            of skilled professionals ready to lead the way.
+          </p>
+        </div>
+        <img src="Mission-Ph.jpg" class="mis_image" alt="" />
+      </div>
+      <div class="story">
+        <h1>The Story And Value Behind Our Company</h1>
+        <div class="cards">
+          <div class="card_in">
+            <div class="card_content">
+              <div class="card-a"><img src="Bulb.png" alt="" /></div>
+
+              <div class="para">
+                <h2>Innovation</h2>
+                <p>
+                  Eightplanes innovates by integrating AI and machine learning
+                  into robotics, solving real-world challenges through expert
+                  collaboration, and setting new industry standards
+                </p>
+              </div>
+            </div>
+            <div class="card_content">
+              <div class="card-a"><img src="team.png" alt="" /></div>
+
+              <div class="para">
+                <h2>Teamwork</h2>
+                <p>
+                  Eightplanes excels in teamwork through strong collaboration,
+                  leveraging diverse expertise to achieve common goals. Our
+                  unified approach fosters innovation, ensures effective
+                  problem-solving, and drives collective success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card_in">
+            <div class="card_content">
+              <div class="card-a"><img src="Badge.png" alt="" /></div>
+
+              <div class="para">
+                <h2>Exellency</h2>
+                <p>
+                  Eightplanes excels in excellence by maintaining high
+                  standards, continuously improving our processes, and
+                  delivering superior products and services. Our commitment to
+                  quality ensures we consistently exceed expectations and lead
+                  the industry
+                </p>
+              </div>
+            </div>
+            <div class="card_content">
+              <div class="card-a"><img src="Responsibility.png" alt="" /></div>
+
+              <div class="para">
+                <h2>Responsibility</h2>
+                <p>
+                  Eightplanes excels in responsibility by prioritizing ethical
+                  practices, sustainability, and community impact. We ensure our
+                  actions reflect our commitment to social and environmental
+                  stewardship, driving positive change in all our endeavors
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobs">
+        <div class="title">
+          <h1>Join Eightplanes Lets Work Together</h1>
+        </div>
+        <div class="job">
+          <div class="job_card">
+            <h2>Web designer and Dev</h2>
+            <div class="pg">
+              <p>
+                interdum ullamcorper sed pharetra sene. Lorem ipsum dolor sit
+                amet consectetur adipiscing elit interdum ullamcorper sed
+                pharetra sene.
+              </p>
+            </div>
+            <button class="btn">Apply Now</button>
+          </div>
+          <div class="job_card">
+            <h2>Web designer and Dev</h2>
+            <div class="pg">
+              <p>
+                interdum ullamcorper sed pharetra sene. Lorem ipsum dolor sit
+                amet consectetur adipiscing elit interdum ullamcorper sed
+                pharetra sene.
+              </p>
+            </div>
+            <button class="btn">Apply Now</button>
+          </div>
+          <div class="job_card">
+            <h2>Web designer and Dev</h2>
+            <div class="pg">
+              <p>
+                interdum ullamcorper sed pharetra sene. Lorem ipsum dolor sit
+                amet consectetur adipiscing elit interdum ullamcorper sed
+                pharetra sene.
+              </p>
+            </div>
+            <button class="btn">Apply Now</button>
+          </div>
+          <div class="green_card">
+            <h2>Cant Find Job You Are Looking For?</h2>
+            <div class="pg">
+              <p>
+                dont worry be in touch with us, we are always looking for team
+                members join us
+              </p>
+            </div>
+
+            <button class="btn_grn">Apply Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="prim">
+          <div class="logo"><img src="/Group 37271.png" alt=""></div>
+          <div class="address">
+            <p>
+              Eightplanes Solutions PVT. LTD. Technology Business Incubator
+              College of engineering Thalassery Eranholi PO-670107, Thalassery,
+              Kannur Dist. Mail to: eightplanes.info@gmail.com Call to:
+              8606063804
+            </p>
+          </div>
+        </div>
+        <div class="numbers">
+          <p>
+            Eightplanes Solutions PVT. LTD. CIN NO: U72100KL2024PTC086818
+            GSTIN:  32AAICE0960G1ZY
+          </p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="insta"><img src="insta.png" alt="" /></div>
+        <div class="link"><img src="link.png" alt="" /></div>
+        <div class="face"><img src="face.png" alt="" /></div>
+        <div class="twit"><img src="twitter.png" alt="" /></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,907 @@
+*{
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
+}
+.nav {
+  margin-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 2;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+}
+.cover-drop{
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+}
+.dropdown_menu {
+  display: none;
+  height: 0px;
+  font-size: 0.7rem;
+  text-align: right;
+  width: 320px;
+  background: rgba(80, 80, 80, 0.2);
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 180px;
+}
+.dropdown_menu ul {
+  padding-left: 0;
+}
+.dropdown_menu li {
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  display: flex;
+  list-style: none;
+  padding-right: 0.7rem;
+}
+.nav .toggle_btn {
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.about_p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  font-weight: 2;
+  text-align: center;
+  font-size: 1rem;
+  color: #797979;
+}
+.about_p p{
+  width: 32.125rem;
+}
+
+.list p {
+  font-size: 0.813rem;
+  font-weight: 600;
+  padding-left: i.875rem;
+  padding-right: 1.875rem;
+  margin: 0px;
+}
+.odd {
+  padding-right: 0px;
+}
+.list {
+  overflow-y: hidden;
+  align-items: center;
+  margin: 0px;
+  background: white;
+  border-radius: 2.438rem;
+  justify-content: center;
+  padding: 0.313rem;
+  display: flex;
+  flex-flow: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 0.625rem;
+  padding-left: 3.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.eplogo {
+  overflow-y: hidden;
+  height: 3.125rem;
+}
+.main {
+  margin-top: 10rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+.main p {
+  margin: 0px;
+}
+.main h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.75rem;
+}
+.imgs {
+  align-items: center;
+  width: 100vw;
+  height: 40vw;
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.img_1,
+.img_2 {
+  border-radius: 3.75rem;
+  height: 100%;
+}
+.bottom_content {
+  padding-bottom: 6.25rem;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+.bottom_content h2 {
+  margin: 0px;
+  font-size: 2.188rem;
+}
+.child_bottom_cont {
+  height: fit-content;
+  width: 37.5rem;
+  word-break: break-all;
+  align-items: end;
+}
+.child_bottom_cont p {
+  font-size: 1.188rem;
+  font-weight: 2;
+  color: #797979;
+}
+.achieve {
+  height: 6.25rem;
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+.achieve h1 {
+  font-size: 3.125rem;
+}
+.achieve div {
+  text-align: center;
+  height: 9.375rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-flow: column;
+}
+.our_mission {
+  margin-top: 12.5rem;
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+.our_mission h1 {
+  width: fit-content;
+  font-size: 2.188rem;
+}
+.mis_content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  height: 18.75rem;
+  width: fit-content;
+}
+.mis_content h1 {
+  margin-bottom: 1rem;
+}
+.mis_content p {
+  width: 25rem;
+  font-size: 0.9rem;
+  color: #797979;
+}
+.mis_image {
+  border-radius: 3.125rem;
+  width: 40vw;
+}
+.story {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  height: fit-content;
+  width:100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.story h1 {
+  overflow-x : hidden;
+  overflow-y : hidden;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0px;
+  width: 31.25rem;
+}
+.cards {
+  display: flex;
+  flex-flow: column;
+  height: fit-content;
+}
+.card_in {
+  margin-top: 3.125rem;
+  height: fit-content;
+  gap: 3rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.card_content {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.card-a {
+  border-radius: 0.625rem;
+  width: 7.438rem;
+}
+
+.para {
+  align-items: center;
+  width: 20rem;
+  display: flex;
+  flex-flow: column;
+}
+.para h1 {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.para p {
+  font-size: 0.938rem;
+  color: #797979;
+}
+.jobs {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+  height: fit-content;
+  margin-bottom: 5rem;
+}
+.job {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-left: 3rem;
+  padding: 0.625rem 0;
+  height: fit-content;
+}
+.job_card {
+  border-style: solid;
+  border-width: 0.063rem;
+  border-radius: 1.875rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-color: #cbcbcb;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-flow: column;
+  width: 31.25rem;
+  height: fit-content;
+}
+button {
+  font-size: 0.813rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+  background-color: #242331;
+  color: #ffffff;
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+  border-style: solid;
+  border-radius: 1.25rem;
+  border-width: 0.063rem;
+  border-color: #313131;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 1.25rem;
+}
+.pg {
+  width: 25rem;
+  height: fit-content;
+}
+.pg p {
+  font-size: 0.813rem;
+  color: #797979;
+}
+.title {
+  padding-top: 3.125rem;
+  width: 31.25rem;
+  font-size: 2.5rem;
+}
+.title h1 {
+  font-size: 2.5rem;
+}
+.green_card {
+  color: white;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  background-color: #00cd82;
+  text-align: center;
+  border-width: 0.063rem;
+  border-color: white;
+  border-radius: 1.875rem;
+  padding: 1.25rem;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-flow: column;
+  width: 31.125rem;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+.green_card p {
+  color: #ffffff;
+}
+.green_card button {
+  background-color: #ffffff;
+  border-color: white;
+  color: black;
+}
+.btn {
+  transition: color 0.5s, background-color 0.5s;
+}
+.btn_grn {
+  transition: color 0.5s, background-color 0.5s;
+}
+.btn:hover {
+  font-size: 0.813rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  color: black;
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+  border-style: solid;
+  border-radius: 1.25rem;
+  border-width: 0.063rem;
+  border-color: #313131;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 1.25rem;
+}
+.btn_grn:hover {
+  font-size: 0.813rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+  background-color: #00cd82;
+  color: white;
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+  border-style: solid;
+  border-radius: 1.25rem;
+  border-width: 0.063rem;
+  border-color: white;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 1.25rem;
+}
+.footer {
+  margin-bottom: 5rem;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.prim {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.prim .eplogo {
+  margin-bottom: 1.25rem;
+}
+.address {
+  width: 12.5rem;
+  font-size: 0.6rem;
+  color: black;
+}
+.numbers {
+  width: 12.5rem;
+  height: fit-content;
+  font-size: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+.numbers p {
+  line-height: 1.25rem;
+  text-align: right;
+}
+.social {
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+}
+.insta {
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
+.link {
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
+.face {
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
+.twit {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
+
+@media (max-width: 1100px) {
+  .card-a{
+    margin-top: 2.9rem;
+  }
+  .card-b{
+    margin-top: 2.9rem;
+  }
+  .card-c{
+    margin-top: 2.9rem;
+  }
+  .card-d{
+    margin-top: 2.9rem;
+  }
+  .mis_content{
+    width: fit-content;
+  }
+  .mis_image{
+    width: 30rem;
+  }
+  .our_mission{
+    width: fit-content;
+  }
+  .para {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-a{
+    margin-top: 2.9rem;
+  }
+  .card-b{
+    margin-top: 2.9rem;
+  }
+  .card-c{
+    margin-top: 2.9rem;
+  }
+  .card-d{
+    margin-top: 2.9rem;
+  }
+  .numbers p{
+    margin-top: 2rem;
+  }
+  body{
+    display: flex;
+    align-items: center;
+  }
+  .nav{
+    margin-top: 2rem;
+  }
+  .nav .list{
+    padding-right: 0;
+  }
+
+  .mis_content{
+    width: fit-content;
+    align-items: center;
+  }
+  .card_in {
+    flex-flow: column;
+  }
+
+  .our_mission {
+
+    flex-direction: column;
+    align-items: center;
+  }
+  .mis_content h1{
+    font-size: 3rem;
+  }
+  .mis_content p{
+    width: 35rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .job_card{
+    padding-left: 0;
+    align-items: center;
+  }
+  .job_card p{
+    text-align: center;
+  }
+
+  .mis_image {
+    width: 100%;
+  }
+
+  .jobs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job {
+    margin-left: 0;
+    align-items: center;
+  }
+  .bottom_content{
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .child_bottom_cont p{
+    text-align: center;
+    font-size: 1rem;
+    width: 35rem;
+  }
+  .child_bottom_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .achieve{
+    flex-flow: column;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mis_image{
+    width: 30rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav .toggle_btn{
+    display: block;
+  }
+  .dropdown_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cover-drop{
+    padding-right: 3rem;
+  }
+  .eplogo .logo{
+    margin-left: 2rem;
+    width: 5rem;
+    height: 2rem;
+  }
+  .nav{
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+  .nav .list{
+    display: none;
+  }
+  .nav .toggle_btn{
+    margin-right: 2rem;
+    display: block;
+  }
+  .bottom_content{
+    flex-flow: column;
+    align-items: center;
+  }
+  .bottom_content h2{
+    font-size: 2rem;
+  }
+  .about_p p{
+    width: 25rem;
+  }
+  .child_bottom_cont p{
+    font-size: 1rem;
+    width: 25rem;
+    text-align: center;
+  }
+  .child_bottom_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .achieve h1{
+    font-size: 2.5rem;
+  }
+  .achieve p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .achieve{
+    height: fit-content;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .first_h{
+    margin-top: 5rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  body{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imgs {
+    flex-direction: column;
+    height: fit-content;
+    width: 90%;
+  }
+
+  .img_1 {
+    height: auto;
+    width: 100%;
+  }
+
+  .job_card {
+    align-items: center;
+    padding-left: 0;
+    width: 22rem;
+  }
+
+  .pg {
+    width: 20rem;
+    text-align: center;
+  }
+  .story{
+    width: fit-content;
+  }
+  .our_mission{
+    width: fit-content;
+    align-items: center;
+  }
+  .our_mission p{
+    width: 25rem;
+  }
+  .mis_content{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+  }
+  .mis_image{
+    width: 30rem;
+  }
+  .numbers{
+    margin-top: 2.1rem;
+  }
+  .green_card{
+    width: 22rem;
+  }
+  .green_card h2{
+    width: 20rem;
+  }
+  .footer{
+    flex-flow: column;
+    text-align: center;
+  }
+  .numbers p{
+    text-align: center;
+  }
+  .main{
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .story h1{
+    overflow-y: hidden;
+  }
+  .cards{
+    width: 20rem;
+  }
+  .dropdown_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cover-drop{
+    padding-right: 3rem;
+  }
+  .eplogo .logo{
+    width: 5rem;
+    height: 2rem;
+  }
+  .nav{
+    margin-top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    width: 100vw;
+  }
+  .main .first_h{
+    font-size: 2.5rem;
+  }
+  .bottom_content{
+    align-items: center;
+    flex-flow: column;
+  }
+  .bottom_content h2{
+    font-size: 2rem;
+  }
+  .child_bottom_cont{
+    width: 17rem;
+  }
+  .child_bottom_cont p{
+    width: 16rem;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .achieve{
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  .mis_content{
+    height: fit-content;
+  }
+  .mis_image{
+    border-radius: 1rem;
+    width: 20rem;
+  }
+  .nav .toggle_btn{
+    padding-right: 3rem;
+    margin-right: 0;
+    display: block;
+  }
+  .eplogo{
+    padding-left: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+  }
+  .eplogo .logo{
+    margin-left:0 ;
+  }
+  .first_h{
+    width: 20rem;
+  }
+  body{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .our_mission{
+    width: fit-content;
+  }
+  .mis_content{
+    width: fit-content;
+  }
+  .mis_content p{
+    width: 20rem;
+  }
+  .about_p{
+    width: 20rem;
+  }
+  .story h1{
+    width: 20rem;
+  }
+  .green_card{
+    width: 22rem;
+  }
+  .title h1{
+    width: 20rem;
+  }
+  .title{
+    width: 20rem;
+  }
+  .achieve{
+    flex-flow: column;
+    width: fit-content;
+  }
+  .card-a img{
+    height: 8em;
+  }
+  .card_content{
+    width: 20rem;
+  }
+  .para p{
+    font-size: 0.7rem;
+  }
+  .para h2{
+    text-align: left;
+  }
+  .pg{
+    width: 15rem;
+  }
+  .para{
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+  }
+  .address p{
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  .footer{
+    flex-flow: column;
+  }
+  .numbers p{
+    text-align: center;
+    font-size: 0.5rem;
+    margin-top: 0;
+  }
+  .numbers{
+    padding-top: 0;
+  }
+  .prim .logo{
+    margin-bottom: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left:0 ;
+  }
+  .toggle_btn{
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 360px) {
+  .green_card p{
+      width: 15rem;
+  }
+  .green_card h2{
+    font-size: 1rem;
+  }
+  .pg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav{
+    margin-top: 0;
+  }
+  .nav .toggle_btn{
+    padding-right: 1.9rem;
+  }
+}

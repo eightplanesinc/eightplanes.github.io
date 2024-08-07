@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"
+    />
+
+    <title>Eight-Planes</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-brand">
+        <img src="assets/logo.png" alt="" />
+      </div>
+      <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#projectsections1">Projects</a>
+        <a href="About.html">About Us</a>
+        <a href="#contactpage">Contact</a>
+      </div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#projectsections1">Projects</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="#contactpage">Contact</a></li>
+      </ul>
+
+      <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const DropDownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          DropDownMenu.classList.toggle("open");
+          const isOpen = DropDownMenu.classList.contains("open");
+
+          toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+      </script>
+    </div>
+    <!--heroPage-->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="HeroPage">
+          <div class="weDesign">
+            <div class="background">
+              <img src="" class="heroimage" />
+            </div>
+            <div class="herotxt">
+              <div class="heroimgTxt1">
+                <p>Designing the future</p>
+              </div>
+              <div class="heroimgTxt2">
+                <p>One blueprint at a time</p>
+              </div>
+            </div>
+            <div class="heroimgcontainer">
+              <div class="heroImg">
+                <img src="assets/heroimg1.png" alt="" />
+              </div>
+            </div>
+            <div class="main">
+              <p>We <span>Design</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+
+      <div class="mySlides fade">
+        <div class="HeroPage">
+          <div class="weDesign">
+            <div class="background2">
+              <img src="" class="heroimage" />
+            </div>
+            <div class="herotxt">
+              <div class="heroimgTxt1">
+                <p>Crafting the future</p>
+              </div>
+              <div class="heroimgTxt2">
+                <p>One step at a time</p>
+              </div>
+            </div>
+            <div class="heroimgcontainer">
+              <div class="heroImg">
+                <img src="assets/heroimg2.png" alt="" />
+              </div>
+            </div>
+            <div class="main">
+              <p>We <span>Build</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="HeroPage">
+          <div class="weDesign">
+            <div class="background3">
+              <img src="" class="heroimage" />
+            </div>
+            <div class="herotxt">
+              <div class="heroimgTxt1">
+                <p>Training the future</p>
+              </div>
+              <div class="heroimgTxt2">
+                <p>One lesson at a time</p>
+              </div>
+            </div>
+            <div class="heroimgcontainer">
+              <div class="heroImg">
+                <img src="assets/heroimg3.png" alt="" />
+              </div>
+            </div>
+            <div class="main">
+              <p>We <span>Train</span></p>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+      <!-- <div class="mySlides fade">
+        <div class="HeroPage">
+          <div class="weDesign">
+            <div class="background2">
+              <img src="" class="heroimage" />
+            </div>
+            <div class="herotxt">
+              <div class="heroimgTxt1">
+                <p>Crafting the future</p>
+              </div>
+              <div class="heroimgTxt2">
+                <p>One step at a time</p>
+              </div>
+            </div>
+            <div class="heroimgcontainer">
+              <div class="heroImg">
+                <img src="assets/heroimg2.png" alt="" />
+              </div>
+            </div>
+            <div class="main">
+              <p>We <span>Build</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="HeroPage">
+          <div class="weDesign">
+            <div class="background3">
+              <img src="" class="heroimage" />
+            </div>
+            <div class="herotxt">
+              <div class="heroimgTxt1">
+                <p>Training the future</p>
+              </div>
+              <div class="heroimgTxt2">
+                <p>One lesson at a time</p>
+              </div>
+            </div>
+            <div class="heroimgcontainer">
+              <div class="heroImg">
+                <img src="assets/heroimg3.png" alt="" />
+              </div>
+            </div>
+            <div class="main">
+              <p>We <span>Train</span></p>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+<<<<<<< HEAD
+    </script>
+=======
+    </script> -->
+    <div class="milestoneContainermain">
+      <div class="milestoneContainer">
+        <div class="training">
+          <div class="traininghrs">
+            <div class="value" akhi="1000">0</div>
+          </div>
+          <p class="mlstone">
+            Students <span class="milestonespan">trained</span>
+          </p>
+        </div>
+        <div class="batches">
+          <div class="batchesCompleted">
+            <div class="value" akhi="50">0</div>
+          </div>
+          <p class="mlstone">
+            Batches <span class="milestonespan">completed</span>
+          </p>
+        </div>
+        <div class="projects">
+          <div class="projectsCompleted">
+            <div class="value" akhi="10">0</div>
+          </div>
+          <p class="mlstone">
+            Project <span class="milestonespan">completed</span>
+          </p>
+        </div>
+
+        <div class="patents">
+          <div class="patentsCompleted">
+            <p>1</p>
+          </div>
+          <p class="mlstone">
+            Patents <span class="milestonespan">applied</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="projectpage">
+      <div class="projectsections" id="projectsections1">
+        <h1>Our <span>Projects</span></h1>
+      </div>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img
+                    src="assets/project_robotCleaning.png"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">
+                  Robotic Farm Cleaning<span>Equipment</span>
+                </h2>
+                <p class="description">
+                  The "Robotic Farm Cleaning Equipment" project, specifically tailored for Indian cattle farms, represents a pioneering initiative funded by the Agriculture Department of the district government.
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/winfo.png" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Eightplanes <span>WINFO</span></h2>
+                <p class="description">
+                  It has real-time monitoring capabilities ensure prompt detection of any deviations in pressure, turbidity, and pH levels, allowing for timely interventions to maintain water safety
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/rover.png" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Autonomous <span>rover</span></h2>
+                <p class="description">
+                  Eightplanes Solutions Private Limited, in collaboration with Deepflow Technologies Pvt Ltd, spearheads the development of an autonomous four-wheel-drive rover equipped with 3D LiDAR technology for rubber tapping applications.
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="servicesPage">
+      <div class="service">
+        <h1>Our <span>Services</span></h1>
+      </div>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/prototype1.png" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Robotic <span>Prototyping</span></h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/startup.png" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">
+                  Startup and industrial <span>designing services</span>
+                </h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img
+                    src="assets/trainingRobotic.png"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Training on <span>robotics</span></h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/3dPrinting.jpeg" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Training on <span>3D printing </span></h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/cad.jpeg" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Training on <span>3D designing</span></h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="MomentsPage">
+      <div class="moments">
+        <h1>Big <span>Moments</span></h1>
+      </div>
+      <div class="momentsContainer1">
+        <div class="momentsLeftSide">
+          <div class="inaugurationContent">
+            <h1>Inauguration</h1>
+            <p>
+              The inauguration ceremony was graced by the esteemed Hon. Speaker,
+              A N Shamseer of the Kerala Legislative Assembly. His esteemed
+              presence and inspiring words have marked a monumental beginning
+              for our venture.
+            </p>
+          </div>
+        </div>
+        <div class="momentsRightSide">
+          <img src="assets/inauguration.png" alt="" />
+        </div>
+      </div>
+      <div class="momentsContainer2">
+        <div class="momentsLeftSide">
+          <img src="assets/training.png" alt="" />
+        </div>
+        <div class="momentsRightSide1">
+          <div class="inaugurationContent">
+            <h1>Moments From Training</h1>
+            <p>
+              The inauguration ceremony was graced by the esteemed Hon. Speaker,
+              A N Shamseer of the Kerala Legislative Assembly. His esteemed
+              presence and inspiring words have marked a monumental beginning
+              for our venture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clientPage">
+      <div class="clientHeading">
+        <h1>Our <span>Clients</span></h1>
+      </div>
+      <div class="clientContainer">
+        <div class="clients">
+          <div class="client1">
+            <img src="assets/imiot.png" />
+          </div>
+          <div class="client2">
+            <img src="assets/x.png" alt="" />
+          </div>
+          <div class="client3">
+            <img src="assets/deLead.png" />
+          </div>
+          <div class="client4">
+            <img src="assets/deepflow.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="affiliatePage">
+      <div class="affiliateHeading">
+        <h1>Our <span>Affiliates</span></h1>
+      </div>
+      <div class="affiliateContainer">
+        <div class="affiliates">
+          <div class="affiliate1">
+            <img src="assets/startupMission.png" alt="" />
+          </div>
+          <div class="affiliate2">
+            <img src="assets/startupindia.png" alt="" />
+          </div>
+          <div class="affiliate3">
+            <img src="assets/govtofIndia.png" alt="" />
+          </div>
+          <div class="affiliate4">
+            <img src="assets/tbi.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contactusPage" id="contactpage">
+      <div class="contactus">
+        <h1>Get in touch today!</h1>
+      </div>
+      <div class="contactusContainer">
+        <div class="email">
+          <div class="mailicon">
+            <img src="assets/Icon.svg" alt="" />
+            <p class="mailp">Mail us</p>
+          </div>
+          <div class="mailus">adsfdsf@gmail.com</div>
+        </div>
+        <div class="contactnumber">
+          <div class="callicon">
+            <img src="assets/call.png" alt="" />
+            <p class="mailp">Call us</p>
+          </div>
+          <div class="callus">2452452456</div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footerPage">
+      <div class="footercontainer">
+        <div class="footerleft">
+          <img src="assets/logo.png" />
+          <p>Eightplanes Solutions PVT. LTD.</p>
+          <p>Technology Business Incubator</p>
+          <p>College of engineering Thalassery</p>
+          <p>Eranholi PO-670107, Thalassery, Kannur Dist.</p>
+          <p>Mail to: eightplanes.info@gmail.com</p>
+          <p>Call to: 8606063804</p>
+        </div>
+        <div class="footerright">
+          <p>Eightplanes Solutions PVT. LTD.</p>
+          <p>CIN NO: U72100KL2024PTC086818</p>
+          <p>GSTIN:  32AAICE0960G1ZY</p>
+        </div>
+      </div>
+    </div>
+    <div class="social">
+      <div class="insta"><img src="insta.png" alt="" /></div>
+      <div class="link"><img src="link.png" alt="" /></div>
+      <div class="face"><img src="face.png" alt="" /></div>
+      <div class="twit"><img src="twitter.png" alt="" /></div>
+    </div>
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
