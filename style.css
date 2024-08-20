@@ -399,7 +399,7 @@ html {
   object-fit: cover;
 }
 .card-image .card-img {
-  height: auto;
+  height: 400px;
   width: 100%;
   border-radius: 25px;
 }
