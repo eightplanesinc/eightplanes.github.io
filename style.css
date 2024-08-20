@@ -556,7 +556,7 @@ html {
   font-weight: 800;
 }
 .client1 img {
-  height: auto;
+  height: 150px;
   width: 100%;
 }
 .client2 img {
@@ -568,7 +568,7 @@ html {
   width: 100%;
 }
 .client4 img {
-  height: auto;
+  height: 150px;
   width: 100%;
 }
 .affiliatePage {
