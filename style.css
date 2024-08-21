@@ -153,6 +153,7 @@ html {
   width: 100%;
 }
 .heroimgTxt1 p {
+  margin-left: 60px;
   font-size: 2rem;
   font-family: "Nunito", sans-serif;
   color: black;
