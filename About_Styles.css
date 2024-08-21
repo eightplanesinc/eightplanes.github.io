@@ -173,6 +173,7 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
+  overflow-y: hidden;
 }
 .achieve h1 {
   font-size: 3.125rem;
