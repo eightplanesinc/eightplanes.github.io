@@ -565,7 +565,7 @@ html {
   width: 100%;
 }
 .client3 img {
-  height: auto;
+  height: 70px;
   width: 100%;
 }
 .client4 img {
@@ -605,7 +605,7 @@ html {
 }
 .affiliate2 img {
   padding-top: 40px;
-  height: auto;
+  height: 150px;
   width: 100%;
 }
 .affiliate3 img {
@@ -617,7 +617,7 @@ html {
 .affiliate4 img {
   height: auto;
   width: 100%;
-  margin-top: -1.5rem;
+  margin-top: 0.5rem;
 }
 .contactus {
   display: flex;
